@@ -1,3 +1,6 @@
+
+namespace dataDosen{
+
 class Dosen {
     //properties
     public int id  {get; set;}
@@ -10,27 +13,18 @@ class Dosen {
 //constructor
     public  Dosen(){
         nama = "Kamarudin, M.Kom";
+        id = 11111;
         course ="Pemrograman";
     }
 
-    public static void attDosen(){
 
-
-
-
-
-
-
-
-
+    public void attDosen(){
+         nama = "Kamarudin, M.Kom";
+         Nik = 211111;
     }
 
-    public static void addCourse(){
-
-
-
-
-        
+    public  void addCourse(){
+        course="Pemrograman";      
     }
 
 
@@ -45,4 +39,5 @@ class Dosen {
 
 
 
+}
 }
