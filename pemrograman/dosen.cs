@@ -11,14 +11,14 @@ class Dosen {
 
 
 //constructor
-    public  Dosen(){
+    public    Dosen(){
         nama = "Kamarudin, M.Kom";
         id = 11111;
         course ="Pemrograman";
     }
 
 
-    public void attDosen(){
+    public void addDosen() {
          nama = "Kamarudin, M.Kom";
          Nik = 211111;
     }
