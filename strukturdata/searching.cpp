@@ -1,41 +1,41 @@
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
-int siswa[10] = { 5, 8, 12, 15, 18, 19, 21, 23, 25, 30};
-int cariAngka;
+int angka[] = { 5, 8, 12, 15, 18, 19, 21, 23, 25, 30};
+int cariAngka,tengah;
 
 
 
-void cariBilangan(){
-    int awal,tengah,akhir,b=0;
-    awal=0;
-    akhir=9;
-
-while ( b == 0 && awal <= akhir){
-
- tengah = (awal + akhir)/2;
-
-    if(siswa[tengah] == cariAngka ){
-        b=1;
-        break;
-    }
-
-    else if (siswa[tengah]<cariAngka){
-        awal = tengah +1;
-    }
-    else{
-        akhir = tengah-1;
+void cariBilangan(int angka[], int awal, int akhir, int cariAngka {
+   if (awal <= akhir) {
+      int mid = (p + r)/2;
+      if (angka[tengah] == cariAngka)
+         return tengah ;
+      if (angka[tengah] > cariAngka
+         return cariBilangan(angka, p, tengah-1, num);
+      if (angka[tengah] < num)
+         return cariBilangan(angka, tengah+1, r, num);
+   }
+   return -1;
 }
 
-if (b == 1){
-    cout<<"Data ditemukan pada index ke"<<tengah<<endl;
-}
-else
-cout<<"data tidak ditemukan";
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 int main(){
-   cout<<"Masukan Bilangan = ";cin>>cariAngka;
-   cariBilangan();
+    cout<<"Masukan Bilangan = ";cin>>cariAngka;
+    cariBilangan();
 }

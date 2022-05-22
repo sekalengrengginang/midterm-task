@@ -1,17 +1,28 @@
 #include <iostream>
 using namespace std;
-void insertionNIM(){
-int i,j;
-string temp;
-for (i=0;i<mahasiswa; i++){
+int angka[9]={ 5, 28, 19, 15, 20, 33, 12, 17, 10};
+int i,j,jumlah=9,temp;
 
-temp = NIM[i];
+//decending
+void insertionAngka(){
+for (i=0;i<jumlah; i++){
+
+temp = angka[i];
 j = i-1;
 
-while(NIM[j] < temp && j >= 0){
-    NIM[j+1] = NIM[j];
+while(angka[j] < temp && j >= 0){
+    angka[j+1] = angka[j];
     j--;
 }
-NIM[j+1] = temp;
+angka[j+1] = temp;
 }
+}
+
+int main(){
+    insertionAngka();
+    cout<<"Angka yg diurutkan =";
+    for (i=0;i<jumlah;i++){
+        cout<<" "<<angka[i];
+    }    
+    cout<<endl;
 }
